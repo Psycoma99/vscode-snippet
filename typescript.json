@@ -1,0 +1,20 @@
+{
+	"Redux Slice" : {
+		"prefix" : "rs",
+		"body" : [
+			"import { createSlice } from '@reduxjs/toolkit'",
+			"",
+			"export const ${1:${TM_DIRECTORY/.+[\\/]//g}}Slice = createSlice({",
+			"    name : '${1:${TM_DIRECTORY/.+[\\/]//g}}',",
+			"    initialState : {},",
+			"    reducers : {}",
+			"})",
+			"",
+			"export const {} = ${1:${TM_DIRECTORY/.+[\\/]//g}}Slice.actions",
+			"export default ${1:${TM_DIRECTORY/.+[\\/]//g}}Slice.reducer"
+		]
+	}
+}
+
+
+	
