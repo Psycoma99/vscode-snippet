@@ -2,9 +2,9 @@
 	"React Functional Component For Typescript" : {
 		"prefix" : "trfc",
 		"body" : [
-			"import { I${3:$TM_FILENAME_BASE}Props } from './interface'",
+			"import { I${1:${TM_DIRECTORY/.+[\\/]//g}}Props } from './interface'",
 			"",
-			"function ${2:$TM_FILENAME_BASE}({} : I${3:$TM_FILENAME_BASE}Props) : JSX.Element {",
+			"function ${1:${TM_DIRECTORY/.+[\\/]//g}}({} : I${1:${TM_DIRECTORY/.+[\\/]//g}}Props) : JSX.Element {",
 			"    return (",
 			"        <div>",
 			"",
@@ -12,7 +12,10 @@
 			"    )",
 			"}",
 			"",
-			"export default ${4:$TM_FILENAME_BASE}"
+			"export default ${1:${TM_DIRECTORY/.+[\\/]//g}}"
 		]
 	}
 }
+
+
+	
